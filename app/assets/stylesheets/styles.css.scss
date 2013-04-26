@@ -1,11 +1,45 @@
-$navbarBackgroundHighlight: orange;
-$navbarBackground: orange;
-$btnPrimaryBackground: blue;
+$navbarBackgroundHighlight: #E96D0A;
+$navbarBackground: #E96D0A;
+$navbarHeight: 30px;
+$navbarLinkColor: white;
+$navbarLinkColorHover: blue;
+
+$btnPrimaryBackground: #AA151B;
+$btnPrimaryBackgroundHighlight: #ED1C24;
 
 @import 'bootstrap';
-body{
-    padding-top: 60px;
+
+.navbar-inner{
+    @include box-shadow(none !important);
+    border: 0;
 }
+
+.btn-main {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background-color:#AA151B;
+	display:inline-block;
+	color:#ffffff;
+	text-align: center;
+	padding:15px 12px;
+	height: 70px;
+	width: 98%;
+
+}.btn-main:hover {
+	background-color:#ED1C24;
+	color: #ffffff;
+}.btn-main:active {
+	position:relative;
+	top:1px;
+}
+
+body{
+    padding-top: 130px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 
 @import 'bootstrap-responsive';
 
