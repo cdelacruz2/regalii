@@ -12,6 +12,23 @@ $btnPrimaryBackgroundHighlight: #ED1C24;
 .navbar-inner{
     @include box-shadow(none !important);
     border: 0;
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px; 
+    text-align: center;
+}
+
+h1 { 
+	font-family: 'Calligraffitti', cursive; 
+	font-weight: 400; 
+}
+
+h2{ 
+	font-family: 'Questrial', sans-serif; 
+	font-weight: 400; 
+}
+h3 { 
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400; 
 }
 
 .btn-main {
@@ -20,15 +37,21 @@ $btnPrimaryBackgroundHighlight: #ED1C24;
 	box-shadow:inset 0px 1px 0px 0px #ffffff;
 	background-color:#AA151B;
 	display:inline-block;
-	color:#ffffff;
+	color:#F4EEAB;
 	text-align: center;
 	padding:15px 12px;
 	height: 70px;
-	width: 98%;
+	width: 100%;
+	font-family: 'Questrial', sans-serif; 
+	font-weight: 400; 
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 26px;
 
 }.btn-main:hover {
 	background-color:#ED1C24;
 	color: #ffffff;
+	text-decoration: none;
 }.btn-main:active {
 	position:relative;
 	top:1px;

@@ -1,34 +1,45 @@
+<% if user_signed_in? %>
+<h1>You're logged in! </h1>
+<% else %>
 <div class="row">
   <div class="span9">
-<div id="myCarousel" class="carousel slide">
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item">
-		<%= image_tag 'DR1.jpg' %>
+     <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+    		<%= image_tag 'DR1.jpg' %>
+        </div>
+        <div class="item">
+        	<%= image_tag 'DR2.jpg' %>
+        </div>
+        <div class="item">
+        	<%= image_tag 'DR3.jpg' %>
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
-    <div class="item">
-    	<%= image_tag 'DR2.jpg' %>
-    </div>
-    <div class="item">
-    	<%= image_tag 'DR3.jpg' %>
-    </div>
-  </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
 
+    </div>
+     	 <div class="span3">
+     	 	<center>
+     	 	<h3> 
+          <font size='12' color='darkblue'>
+             I want to
+          </font>
+        </h3>
+     	 </center>
+     	 	<p> <%= link_to 'send my family fresh groceries in the D.R ',  "#" , class: "btn-main" %> </p>
+     	 	<p> <%= link_to 'pay my familys utility bills in the D.R' ,  "#" , class: "btn-main" %> </p>
+  </div>
 </div>
- 	 <div class="span3">
- 	 	<center>
- 	 	<h2>I want to</h2>
- 	 </center>
- 	 	<p> <%= link_to 'send my family fresh groceries in the D.R ',  "#" , class: "btn-main" %> </p>
- 	 	<p> <%= link_to 'pay my familys utility bills in the D.R' ,  "#" , class: "btn-main" %> </p>
- 	 </div>
-</div>
+<div>
+     <p> <%= link_to 'Sign up now!',  new_user_registration_path , class: "btn btn-large btn-primary" %> </p>
+   </div>
+   <% end %>
