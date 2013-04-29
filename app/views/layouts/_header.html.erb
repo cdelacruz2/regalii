@@ -29,18 +29,22 @@
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li>    
-                            <%= link_to 'About',  about_path %>
+                            <%= link_to 'about us',  about_path %>
                         </li>
                     </ul>
+
                     <ul class="nav pull-right">
                        <% if user_signed_in? %>
-                        <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
-                        <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+                        <li><%= link_to "edit profile", edit_user_registration_path %></li>
+                        <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
                       <% else %>
-                    <li><%= link_to "Login", new_user_session_path %></li>
+
+                    <li> <%= link_to 'sign up',  new_user_registration_path %> </li>
+  
+                    <li><%= link_to "login", new_user_session_path %></li>
                       <% end %>
-            </ul>
-                    </ul>
+                   </ul>
+                  
                 </div>
         </div>
     </div>

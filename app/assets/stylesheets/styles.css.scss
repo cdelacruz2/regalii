@@ -2,7 +2,7 @@ $navbarBackgroundHighlight: #E96D0A;
 $navbarBackground: #E96D0A;
 $navbarHeight: 30px;
 $navbarLinkColor: white;
-$navbarLinkColorHover: blue;
+$navbarLinkColorHover: #076AB2;
 
 $btnPrimaryBackground: #AA151B;
 $btnPrimaryBackgroundHighlight: #ED1C24;
@@ -40,8 +40,6 @@ h3 {
 	color:#F4EEAB;
 	text-align: center;
 	padding:15px 12px;
-	height: 70px;
-	width: 100%;
 	font-family: 'Questrial', sans-serif; 
 	font-weight: 400; 
 	font-size: 20px;
@@ -55,6 +53,18 @@ h3 {
 }.btn-main:active {
 	position:relative;
 	top:1px;
+}
+
+.gray-box {
+	background-color: #CCCCCC;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+
+.black-box {
+	background-color: #4C433E;
+	margin-bottom: 15px;
+	padding-left: 10px;
 }
 
 body{

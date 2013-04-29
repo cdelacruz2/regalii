@@ -9,9 +9,11 @@
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
+
       <!-- Carousel items -->
       <div class="carousel-inner">
         <div class="active item">
+
     		<%= image_tag 'DR1.jpg' %>
         </div>
         <div class="item">
@@ -24,22 +26,54 @@
       <!-- Carousel nav -->
       <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
       <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+
     </div>
 
     </div>
      	 <div class="span3">
      	 	<center>
      	 	<h3> 
-          <font size='12' color='darkblue'>
+          <font size='12' color='#076AB2'>
              I want to
           </font>
         </h3>
-     	 </center>
+     	 
      	 	<p> <%= link_to 'send my family fresh groceries in the D.R ',  "#" , class: "btn-main" %> </p>
      	 	<p> <%= link_to 'pay my familys utility bills in the D.R' ,  "#" , class: "btn-main" %> </p>
+        </center>
   </div>
 </div>
-<div>
-     <p> <%= link_to 'Sign up now!',  new_user_registration_path , class: "btn btn-large btn-primary" %> </p>
-   </div>
+
+   <div class="row">
+      <div class="span12">
+          <div class="gray-box">
+            <center>
+              <%= image_tag 'featured-in.png' %>
+               </center>
+          </div>
+      </div>
+</div>
+
+   <div class="row">
+      <div class="span8">
+          <div class="black-box">
+            <h2>
+             <font size='3' color='#ffffff'>
+              NEWS IN D.R YOU SHOULD KNOW ABOUT</h2>
+            </font>
+          </div>
+          <ul> Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.</ul>
+          <ul> Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.</ul>
+          <ul> Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.</ul>
+      </div>
+
+      <div class="span4">
+          <div class="black-box">
+            <h2> <font size='3' color='#ffffff'>BE PROUD TO PROVIDE FOR YOUR FAMILY</h2></font>
+          </div>
+           <ul> Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.</ul>
+          <ul> Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.</ul>
+          <ul> Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.</ul>
+      </div>
+
    <% end %>
