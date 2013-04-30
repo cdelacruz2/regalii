@@ -3,6 +3,10 @@ Regalii::Application.routes.draw do
 
   root :to => 'pages#home'
   get 'about' => 'pages#about'
+  get 'refunds' => 'pages#refunds'
+  get 'terms' => 'pages#terms'
+  get 'privacy' => 'pages#privacy'
+  get 'contact' => 'pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
