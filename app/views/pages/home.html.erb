@@ -3,33 +3,38 @@
 <% else %>
 <div class="row">
   <div class="span9">
-     <div id="myCarousel" class="carousel slide">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
 
+     <div id="myCarousel" class="carousel slide" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
       <!-- Carousel items -->
-      <div class="carousel-inner">
-        <div class="active item">
+<div class="carousel-inner">
 
-    		<%= image_tag 'DR1.jpg' %>
-        </div>
+     <div class="active item">
+
+        <%= image_tag 'DR1.jpg' %>
+      </div>
         <div class="item">
         	<%= image_tag 'DR2.jpg' %>
+         
         </div>
         <div class="item">
         	<%= image_tag 'DR3.jpg' %>
+         
         </div>
       </div>
       <!-- Carousel nav -->
+
       <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
       <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  </div>
+</div>
 
-    </div>
 
-    </div>
      	 <div class="span3">
      	 	<center>
      	 	<h2> 
