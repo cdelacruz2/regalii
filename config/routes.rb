@@ -7,6 +7,8 @@ Regalii::Application.routes.draw do
   get 'terms' => 'pages#terms'
   get 'privacy' => 'pages#privacy'
   get 'contact' => 'pages#contact'
+  get 'supermarket' => 'pages#supermarket'
+  get 'utilities' => 'pages#utilities'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

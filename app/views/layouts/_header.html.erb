@@ -1,7 +1,7 @@
 <head>
 <script type="text/javascript">
   WebFontConfig = {
-    google: { families: [ 'Quicksand:300,700:latin', 'Roboto+Condensed:300,400:latin' ] }
+    google: { families: [ 'Bad+Script::latin', 'Roboto+Condensed:300,400:latin' ] }
   };
   (function() {
     var wf = document.createElement('script');
@@ -13,6 +13,15 @@
     s.parentNode.insertBefore(wf, s);
   })(); </script>
 </head>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
@@ -40,6 +49,7 @@
                     </ul>
 
                     <ul class="nav pull-right">
+                      
                        <% if user_signed_in? %>
                         <li><%= link_to "edit profile", edit_user_registration_path %></li>
                         <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
@@ -49,6 +59,7 @@
   
                     <li><%= link_to "login", new_user_session_path %></li>
                       <% end %>
+                      <div class="fb-like" data-href="https://www.facebook.com/Regalii" data-send="false" data-layout="button_count" data-width="50" data-show-faces="false" data-font="lucida grande" data-action="recommend"></div>
                    </ul>
                   
                 </div>
