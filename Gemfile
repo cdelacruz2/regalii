@@ -4,6 +4,9 @@ gem 'rails', '3.2.13'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
+gem "haml", "~> 4.0.2"
+gem "haml-rails"
+
 
 group :production do
 	gem 'pg'

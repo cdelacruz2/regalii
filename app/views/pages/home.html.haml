@@ -1,0 +1,51 @@
+- if user_signed_in?
+  %h1 You're logged in!
+- else
+  .row
+    .span9
+      #myCarousel.carousel.slide{"data-interval" => "3000"}
+        %ol.carousel-indicators
+          %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
+          %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+        / Carousel items
+        .carousel-inner
+          .active.item
+            = image_tag 'DR1.jpg'
+          .item
+            = image_tag 'DR2.jpg'
+          .item
+            = image_tag 'DR3.jpg'
+        / Carousel nav
+        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+    .span3
+      %center
+        %h2
+          %font{:color => "#AA151B", :size => "12"}
+            I want to
+        = link_to 'send my family fresh groceries in the D.R ',  "supermarket" , class: "btn-main"
+        = link_to 'pay my familys utility bills in the D.R' ,  "utilities" , class: "btn-main"
+  .row
+    .span12
+      .gray-box
+        %center
+          = image_tag 'featured-in.png'
+  .row
+    .span8
+      .black-box
+        %h2
+          %font{:color => "#ffffff", :font => "", :size => "4", :weight => "300"}
+            NEWS IN THE D.R. THAT YOU SHOULD KNOW ABOUT
+      %h3
+        %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
+        %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
+        %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
+    .span4
+      .black-box
+        %h2
+          %font{:color => "#ffffff", :size => "4"} BE PROUD TO PROVIDE FOR YOUR FAMILY
+      %h3
+        %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
+        %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
+        %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.

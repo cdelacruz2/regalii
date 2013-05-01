@@ -1,0 +1,50 @@
+%head
+  :javascript
+      WebFontConfig = {
+        google: { families: [ 'Bad+Script::latin', 'Roboto+Condensed:300,400:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);})(); 
+
+#fb-root
+  :javascript
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+  .navbar.navbar-fixed-top
+    .navbar-inner
+      .container
+        %a.btn.btn-navbar{"data-target" => ".nav-collapse", "data-toggle" => "collapse"}
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.brand{:href => "/"}
+          = image_tag 'regalii-logo.png'
+        .nav-collapse
+          %ul.nav
+            %li
+              = link_to 'about us',  about_path
+            %li
+              = link_to 'refunds',  refunds_path
+            %li
+              = link_to 'contact us',  contact_path
+          %ul.nav.pull-right
+            - if user_signed_in?
+              %li= link_to "edit profile", edit_user_registration_path
+              %li= link_to "logout", destroy_user_session_path, method: :delete
+            - else
+              %li
+                = link_to 'sign up',  new_user_registration_path
+              %li= link_to "login", new_user_session_path
+          .fb-like{"data-action" => "recommend", "data-font" => "lucida grande", "data-href" => "https://www.facebook.com/Regalii", "data-layout" => "button_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "50"}
