@@ -13,4 +13,23 @@
  */
 .container {
 	color: #000000;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 300;
+	color: #000000;	
+}
+.navbar-inner {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+}
+ul.nav.nav-pills {
+  margin-top: 50px;
+  margin-left: 10px;
+  list-style: none;
+}
+ul.nav.pull-right {
+  margin-top: 50px;
+  margin-left: 0;
+  list-style: none;
 }

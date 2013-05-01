@@ -32,13 +32,24 @@
         %a.brand{:href => "/"}
           = image_tag 'regalii-logo.png'
         .nav-collapse
-          %ul.nav
-            %li
+          %ul.nav.nav-pills
+            %li.active
               = link_to 'about us',  about_path
             %li
-              = link_to 'refunds',  refunds_path
-            %li
               = link_to 'contact us',  contact_path
+            %li.dropdown
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "refunds"}
+                legal info
+                %b.caret
+              %ul.dropdown-menu
+                %li
+                  = link_to 'refunds',  refunds_path
+                %li.divider
+                %li
+                  = link_to 'privacy policy',  privacy_path
+                %li.divider
+                %li
+                  = link_to 'terms & conditions',  terms_path
           %ul.nav.pull-right
             - if user_signed_in?
               %li= link_to "edit profile", edit_user_registration_path
@@ -47,4 +58,3 @@
               %li
                 = link_to 'sign up',  new_user_registration_path
               %li= link_to "login", new_user_session_path
-          .fb-like{"data-action" => "recommend", "data-font" => "lucida grande", "data-href" => "https://www.facebook.com/Regalii", "data-layout" => "button_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "50"}

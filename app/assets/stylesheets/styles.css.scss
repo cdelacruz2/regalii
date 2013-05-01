@@ -1,3 +1,7 @@
+/*
+ Header section
+*/
+
 $navbarBackgroundHighlight: #E96D0A;
 $navbarBackground: #E96D0A;
 $navbarHeight: 30px;
@@ -22,6 +26,10 @@ $btnPrimaryBackgroundHighlight: #ED1C24;
 	top: 1px;
 }
 
+/*
+ Typography section
+*/
+
 h1 { 
 	font-family: 'Bad Script', cursive;
 	font-size: 36px;
@@ -32,6 +40,7 @@ h1 {
 h2{ 
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #211F1F;
+	font-weight: 300;
 }
 
 h3{ 
@@ -50,12 +59,28 @@ h4{
 	color: #AA151B;	
 }
 
+.title {
+	background: #4C433E;
+	display: inline;
+	padding: 5px;
+	font-size: 20px;
+	line-height: 30px;
+	color: #F4EEAB;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+/*
+ buttons section
+*/
+
 .btn-main {
 	background-color:#AA151B;
 	display:inline-block;
 	color:#F4EEAB;
 	text-align: center;
 	margin-top: 10px;
+	margin-bottom: 10px;
 	padding:15px 12px;
 	font-family: 'Roboto Condensed', sans-serif; 
 	font-weight: 400; 
@@ -86,7 +111,6 @@ h4{
 	padding-left: 10px;
 }
 
-
 body{
     padding-top: 120px;
     padding-left: 5%;
@@ -95,6 +119,15 @@ body{
 	color: #ffffff;
 }
 
+/*.want {
+	border:2px;
+	border-color: #CCCCCC;
+	border-style:solid;
+	padding: 10px;
+	height: 283px;
+	margin-bottom: 20px;
+}
+*/
 
 @import 'bootstrap-responsive';
 
