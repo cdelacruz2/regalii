@@ -59,6 +59,12 @@ h4{
 	color: #AA151B;	
 }
 
+.main-text-cont {
+	max-width: 600px;
+	margin: 10px;
+
+}
+
 .title {
 	background: #4C433E;
 	display: inline;
@@ -98,9 +104,11 @@ h4{
 }
 
 .gray-box {
+	margin-top: 15px;
 	background-color: #CCCCCC;
 	margin-bottom: 15px;
 	padding-left: 10px;
+
 }.gray-box:hover {
 	background-color: #076AB2;
 }
@@ -109,6 +117,7 @@ h4{
 	background-color: #4C433E;
 	margin-bottom: 15px;
 	padding-left: 10px;
+	font-weight: 400;
 }
 
 body{
@@ -116,7 +125,7 @@ body{
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'Roboto Condensed', sans-serif;
-	color: #ffffff;
+		color: #ffffff;
 }
 
 /*.want {
@@ -128,6 +137,44 @@ body{
 	margin-bottom: 20px;
 }
 */
+
+.car-cont {
+	height: 400px;
+	z-index: 0;
+	position: relative;
+}
+.car-cont-img {
+	background-image: image-url("DR1.jpg");
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	z-index: 0;
+}
+.car-type {
+	background: #076AB2;
+	display: inline;
+	padding: 3px;
+	font-size: 25px;
+	line-height: 45px;
+	color: #F4EEAB;
+	font-weight: 400;
+	z-index: 2;
+	position: relative;
+	overflow: auto;
+	left: 20px;
+	top: 20px;
+}
+
+.guaranteed {
+	background-image: image-url("guarantee-graphic.png");
+	width: 150px;
+	height: 137px;
+	overflow: hidden;
+	z-index: 1;
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+}
 
 @import 'bootstrap-responsive';
 

@@ -3,33 +3,25 @@
 - else
   .row
     .span9
-      #myCarousel.carousel.slide{"data-interval" => "3000"}
-        %ol.carousel-indicators
-          %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-          %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-          %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-        / Carousel items
-        .carousel-inner
-          .active.item
-            = image_tag 'DR1.jpg'
-          .item
-            = image_tag 'DR2.jpg'
-          .item
-            = image_tag 'DR3.jpg'
-        / Carousel nav
-        %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
-        %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+      .car-cont
+        .car-cont-img
+          .car-type
+            SEND YOUR FAMILY FRESH DELIVERED GROCERIES OR 
+            %br
+            PAY THEIR UTILITY BILLS RIGHT HERE!
+        .guaranteed
+        
     .span3
       .want
         %center
           %h2
             %font{:color => "#AA151B", :size => "12"}
               I want to
-          = link_to 'send my family fresh groceries in the D.R ',  "supermarket" , class: "btn-main"
-          = link_to 'pay my familys utility bills in the D.R' ,  "utilities" , class: "btn-main"
+          = link_to 'send my family fresh groceries in the Dominican Republic ',  "supermarket" , class: "btn-main"
+          = link_to 'pay my familys utility bills in the Dominican Republic' ,  "utilities" , class: "btn-main"
   .row
     .span12
-      .gray-box
+      .gray-box.hidden-phone
         %center
           = image_tag 'featured-in.png'
   .row
