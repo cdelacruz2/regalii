@@ -1,5 +1,6 @@
 .row
 	.span12
+	%center
 		%h1 Welcome to our online Supermarket!
 		%br/
 		We currently deliver food bundles of your choice to anywhere in Santo Domingo. 
@@ -8,74 +9,87 @@
 		%br/
 		%h4 ﻿What kind of food bundle would you like to send?
 		%br/
-.row-fluid
+		%br
+
+.row
 	.span4
-		= image_tag 'DR1.jpg'
-		This package contains
-		%li Lorem ipsum
-		%li Lorem ipsum
-		%li Lorem ipsum
-		%li Lorem ipsum
+		%center
+			= link_to(image_tag("fruit-basket.jpg", :border => -1), "mymodal", "data-toggle" => "modal", :href => "#food100")
+			%br
+			%center
+			%br
+			This package contains
+			%li Lorem ipsum
+			%li Lorem ipsum
+			%li Lorem ipsum
+			%li Lorem ipsum
 
-		%br/
-		= link_to 'View full package listing',  "mymodal", "data-toggle" => "modal", :href => "#myModal1"
+			%br/
+			.well
+				= link_to 'View full package listing',  "mymodal", "data-toggle" => "modal", :href => "#food100", :class => 'btn-main-gray'
+				= link_to 'Select this package' ,  "#" , class: "btn-main"
 
-		#myModal1.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
-			.modal-header
-				%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-				%h3#myModalLabel Modal header
-			.modal-body
-				%p wake
-			.modal-footer
-				%button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
-				%button.btn.btn-primary Select this package
+			#food100.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+				.modal-header
+					%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+					%h3#myModalLabel Modal header
+				.modal-body
+					%p $100
+				.modal-footer
+					%button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
+					%button.btn.btn-primary Select this package
 
-		%br/
-		= link_to 'Select this package' ,  "#" , class: "btn-main"
 	.span4
-		= image_tag 'DR2.jpg'
-		%br/
-		This package contains
-		%li Lorem ipsum
-		%li Lorem ipsum
-		%li Lorem ipsum
-		%li Lorem ipsum
-		%br/
-		
-		= link_to 'View full package listing',  "mymodal", "data-toggle" => "modal", :href => "#myModal2"
+		%center
+			= link_to(image_tag("fruit-basket.jpg", :border => -1), "mymodal", "data-toggle" => "modal", :href => "#food200")
+			%br
+			%center
+			%br
+			This package contains
+			%li Lorem ipsum
+			%li Lorem ipsum
+			%li Lorem ipsum
+			%li Lorem ipsum
 
-		#myModal2.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
-			.modal-header
-				%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-				%h3#myModalLabel Modal header
-			.modal-body
-				%p testing
-			.modal-footer
-				%button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
-				%button.btn.btn-primary Select this package
- 
-		%br/
-		= link_to 'Select this package' ,  "#" , class: "btn-main"
+			%br/
+			.well
+				= link_to 'View full package listing',  "mymodal", "data-toggle" => "modal", :href => "#food200", :class => 'btn-main-gray'
+				= link_to 'Select this package' ,  "#" , class: "btn-main"
+
+			#food200.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+				.modal-header
+					%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+					%h3#myModalLabel Modal header
+				.modal-body
+					%p $200
+				.modal-footer
+					%button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
+					%button.btn.btn-primary Select this package
+
+
 	.span4
-		= image_tag 'DR3.jpg'
-		This package contains
-		%li Lorem ipsum
-		%li Lorem ipsum
-		%li Lorem ipsum
-		%li Lorem ipsum
-		%br/
-		
-		= link_to 'View full package listing',  "mymodal", "data-toggle" => "modal", :href => "#myModal3"
+		%center
+			= link_to(image_tag("fruit-basket.jpg", :border => -1), "mymodal", "data-toggle" => "modal", :href => "#food300")
+			%br
+			%center
+			%br
+			This package contains
+			%li Lorem ipsum
+			%li Lorem ipsum
+			%li Lorem ipsum
+			%li Lorem ipsum
 
-		#myModal3.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
-			.modal-header
-				%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-				%h3#myModalLabel Modal header
-			.modal-body
-				%p wanting
-			.modal-footer
-				%button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
-				%button.btn.btn-primary Select this package
- 
-		%br/
-		= link_to 'Select this package' ,  "#" , class: "btn-main"
+			%br/
+			.well
+				= link_to 'View full package listing',  "mymodal", "data-toggle" => "modal", :href => "#food300", :class => 'btn-main-gray'
+				= link_to 'Select this package' ,  "#" , class: "btn-main"
+
+			#food300.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+				.modal-header
+					%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+					%h3#myModalLabel Modal header
+				.modal-body
+					%p $300
+				.modal-footer
+					%button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
+					%button.btn.btn-primary Select this package

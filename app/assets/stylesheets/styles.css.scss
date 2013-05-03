@@ -82,12 +82,12 @@ h4{
 
 .btn-main {
 	background-color:#AA151B;
-	display:inline-block;
+	display:block;
 	color:#F4EEAB;
 	text-align: center;
 	margin-top: 10px;
-	margin-bottom: 20px;
-	padding:15px 12px;
+	margin-bottom: 10px;
+	padding:10px;
 	font-family: 'Roboto Condensed', sans-serif; 
 	font-weight: 400; 
 	font-size: 20px;
@@ -102,6 +102,30 @@ h4{
 	position:relative;
 	top:2px;
 }
+
+.btn-main-gray {
+	background-color:#BABABA;
+	display:block;
+	color:#FCFBE0;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding:10px;
+	font-family: 'Roboto Condensed', sans-serif; 
+	font-weight: 400; 
+	font-size: 20px;
+	letter-spacing: 1px;
+	line-height: 26px;
+
+}.btn-main-gray:hover {
+	background-color:#969696;
+	color: #FCFBE0;
+	text-decoration: none;
+}.btn-main-gray:active {
+	position:relative;
+	top:2px;
+}
+
 
 .gray-box {
 	margin-top: 15px;
