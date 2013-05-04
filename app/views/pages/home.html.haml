@@ -3,16 +3,14 @@
 - else
   .row
     .span9
-      %center
-        %h1.visible-phone
-          Welcome to regalii!
-          %h2.visible-phone
-            The best way to support your family in the Dominican Republic!
-          %br.visible-phone
-        %h2.visible-phone
-          What would you like to do?
-          %br.visible-phone
-          %br.visible-phone
+      %h2.visible-phone
+        The best way to support your family in the Dominican Republic.
+      %br.visible-phone
+      %br.visible-phone
+      %h4.visible-phone
+        What would you like to do for your family today?
+      %br.visible-phone
+      %br.visible-phone
       .car-cont.hidden-phone
         .car-cont-img
           .car-type
@@ -21,20 +19,28 @@
             PAY THEIR UTILITY BILLS RIGHT HERE!
         .guaranteed
         
-    .span3
-      .want
+    .span3 
+      .hidden-phone     
         %center
           %h2
             %font{:color => "#AA151B", :size => "12"}
               I want to
           = link_to 'send my family fresh groceries in the Dominican Republic ',  "supermarket" , class: "btn-main"
           = link_to 'pay my familys utility bills in the Dominican Republic' ,  "utilities" , class: "btn-main"
+      .well.visible-phone
+        %center
+          %h2
+            %font{:color => "#AA151B", :size => "12"}
+              I want to
+            = link_to 'send my family fresh groceries in the Dominican Republic ',  "supermarket" , class: "btn-main"
+            = link_to 'pay my familys utility bills in the Dominican Republic' ,  "utilities" , class: "btn-main"
+  
   .row
     .span12
       .gray-box.hidden-phone
         %center
           = image_tag 'featured-in.png'
-  .row
+  .row.hidden-phone
     .span8
       .black-box
         %h2
