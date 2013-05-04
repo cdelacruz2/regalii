@@ -32,9 +32,9 @@
 			#food100.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
 				.modal-header
 					%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-					%h3#myModalLabel Modal header
+					%h3#myModalLabel The $100 package
 				.modal-body
-					%p $100
+					= render 'layouts/package-a'
 				.modal-footer
 					%button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
 					%button.btn.btn-primary Select this package
