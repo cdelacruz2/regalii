@@ -15,6 +15,8 @@
 	.span4
 		.well
 			%center
+				%h2 $100 package
+			%center
 				= link_to(image_tag("fruit-basket.jpg", :class => "food"), "mymodal", "data-toggle" => "modal", :href => "#food100")
 				%br
 				%center
@@ -32,7 +34,7 @@
 				#food100.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
 					.modal-header
 						%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-						%h4#myModalLabel The standard $100 package
+						%h3#myModalLabel The standard $100 package
 					.modal-body
 						= render 'layouts/package-a'
 					.modal-footer
@@ -41,6 +43,8 @@
 
 	.span4
 		.well
+			%center
+				%h2 $200 package
 			%center
 				= link_to(image_tag("fruit-basket.jpg", :class => "food"), "mymodal", "data-toggle" => "modal", :href => "#food200")
 				%br
@@ -59,7 +63,7 @@
 				#food200.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
 					.modal-header
 						%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-						%h4#myModalLabel The silver $200 package
+						%h3#myModalLabel The silver $200 package
 					.modal-body
 						= render 'layouts/package-a'
 					.modal-footer
@@ -69,6 +73,8 @@
 
 	.span4
 		.well
+			%center
+				%h2 $300 package
 			%center
 				= link_to(image_tag("fruit-basket.jpg", :class => "food"), "mymodal", "data-toggle" => "modal", :href => "#food300")
 				%br
@@ -87,7 +93,7 @@
 				#food300.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
 					.modal-header
 						%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-						%h4#myModalLabel The golden $300 package
+						%h3#myModalLabel The golden $300 package
 					.modal-body
 						= render 'layouts/package-a'
 					.modal-footer
