@@ -4,3 +4,10 @@
 
 
 %br
+
+%script{:charset => "utf-8", :src => "carousel_edgePreload.js", :type => "text/javascript"}
+:css
+  .edgeLoad-photo-gallery-1 { visibility:hidden; }
+      / Adobe Edge Runtime End
+%body{:style => "margin:0;padding:0;"}
+  #Stage.photo-gallery-1

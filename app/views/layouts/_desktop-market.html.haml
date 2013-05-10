@@ -1,0 +1,44 @@
+.row
+	.span12
+		.black-box
+			%center	
+				%h2 
+					%font{:color => "#ffffff", :size => "5"}The bronze $100 package
+	.span5
+		.market-list
+			= render 'layouts/package-a'
+		= link_to 'Select this package' ,  "#" , class: "btn-main"
+	.span7
+		= image_tag 'bronze100.jpg' 
+%br
+%br
+%br
+
+.row
+	.span12
+		.black-box
+			%center	
+				%h2 
+					%font{:color => "#ffffff", :size => "5"}The silver $200 package
+	.span5
+		.market-list
+			= render 'layouts/package-a'
+		= link_to 'Select this package' ,  "#" , class: "btn-main"
+	.span7
+		= image_tag 'silver200.jpg' 
+%br
+%br
+%br
+
+.row
+	.span12
+		.black-box
+			%center	
+				%h2 
+					%font{:color => "#ffffff", :size => "5"}The gold $300 package
+	.span5
+		.market-list
+			= render 'layouts/package-a'
+		= link_to 'Select this package' ,  "#" , class: "btn-main"
+	.span7
+		= image_tag 'gold300.jpg' 

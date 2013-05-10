@@ -1,5 +1,10 @@
+ul.groceries{
+  margin-left: -10px;
+}
+
 
 li img {
+  height: 80px;
   float: left;
   margin: 0 15px 0 0;
 }
@@ -16,4 +21,21 @@ li {
  
 li:hover {
   background: #eee;
+}
+
+ul.nav.nav-pills li {
+	padding: 0px;
+	overflow: visible;
+}
+
+ul.nav.nav-pills li:hover {
+	background: none;
+}
+
+ul.nav.pull-right li {
+	padding: 0px;
+}
+
+ul.nav.pull-right li:hover {
+	background: none;
 }

@@ -1,0 +1,88 @@
+.row
+	.span4
+		.well
+			%center
+				%h2 $100 package
+			%center
+				= link_to(image_tag("bronze100-mobile.jpg", :class => "food"), "mymodal", "data-toggle" => "modal", :href => "#food100")
+				%br
+				%center
+				%br
+				This package contains
+				%li Lorem ipsum
+				%li Lorem ipsum
+				%li Lorem ipsum
+				%li Lorem ipsum
+
+				%br/
+				= link_to 'View full package listing',  "mymodal", "data-toggle" => "modal", :href => "#food100", :class => 'btn-main-gray'
+				= link_to 'Select this package' ,  "#" , class: "btn-main"
+
+				#food100.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+					.modal-header
+						%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+						%h3#myModalLabel The standard $100 package
+					.modal-body
+						= render 'layouts/package-a'
+					.modal-footer
+						%button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
+						%button.btn.btn-primary Select this package
+
+	.span4
+		.well
+			%center
+				%h2 $200 package
+			%center
+				= link_to(image_tag("bronze100-mobile.jpg", :class => "food"), "mymodal", "data-toggle" => "modal", :href => "#food200")
+				%br
+				%center
+				%br
+				This package contains
+				%li Lorem ipsum
+				%li Lorem ipsum
+				%li Lorem ipsum
+				%li Lorem ipsum
+
+				%br/
+				= link_to 'View full package listing',  "mymodal", "data-toggle" => "modal", :href => "#food200", :class => 'btn-main-gray'
+				= link_to 'Select this package' ,  "#" , class: "btn-main"
+
+				#food200.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+					.modal-header
+						%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+						%h3#myModalLabel The silver $200 package
+					.modal-body
+						= render 'layouts/package-a'
+					.modal-footer
+						%button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
+						%button.btn.btn-primary Select this package
+
+
+	.span4
+		.well
+			%center
+				%h2 $300 package
+			%center
+				= link_to(image_tag("bronze100-mobile.jpg", :class => "food"), "mymodal", "data-toggle" => "modal", :href => "#food300")
+				%br
+				%center
+				%br
+				This package contains
+				%li Lorem ipsum
+				%li Lorem ipsum
+				%li Lorem ipsum
+				%li Lorem ipsum
+
+				%br/
+				= link_to 'View full package listing',  "mymodal", "data-toggle" => "modal", :href => "#food300", :class => 'btn-main-gray'
+				= link_to 'Select this package' ,  "#" , class: "btn-main"
+
+				#food300.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+					.modal-header
+						%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+						%h3#myModalLabel The golden $300 package
+					.modal-body
+						= render 'layouts/package-a'
+					.modal-footer
+						%button.btn{"aria-hidden" => "true", "data-dismiss" => "modal"} Close
+						%button.btn.btn-primary Select this package

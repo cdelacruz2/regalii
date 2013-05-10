@@ -1,16 +1,6 @@
-#myCarousel.carousel.slide{"data-interval" => "3000"}
-  %ol.carousel-indicators
-    %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-    %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-    %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
-  / Carousel items
-  .carousel-inner
-    .active.item
-      = image_tag 'DR1.jpg'
-    .item
-      = image_tag 'DR2.jpg'
-    .item
-      = image_tag 'DR3.jpg'
-  / Carousel nav
-  %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
-  %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›
+%script{:charset => "utf-8", :src => "carousel_edgePreload.js", :type => "text/javascript"}
+:css
+  .edgeLoad-photo-gallery-1 { visibility:hidden; }
+      / Adobe Edge Runtime End
+%body{:style => "margin:0;padding:0;"}
+  #Stage.photo-gallery-1
