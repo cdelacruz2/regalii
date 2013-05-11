@@ -33,3 +33,7 @@ ul.nav.pull-right {
   margin-left: 0;
   list-style: none;
 }
+.navbar {
+  overflow: visible;
+  margin-top: 30px;
+  }

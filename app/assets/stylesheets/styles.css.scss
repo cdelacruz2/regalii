@@ -145,17 +145,42 @@ h6 {
 
 .lang-container {
 	background-color: #cc600a;
-	height: 22px;
+	height: 30px;
 	width: 100%;
 	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
 
+.lang-btn-en {
+	display: inline-block;
+	width: 137px;
+	height: 30px;
+	background: image-url("language.png");
+	background-position: 0 -30px;
+	text-indent: -99999px;
+	}
+.lang-btn-en:hover {
+	background-position: 0 0;
+}
+.lang-btn-es {
+	display: inline-block;
+	width: 137px;
+	height: 30px;
+	background: image-url("language.png");
+	background-position: 137px 0px;
+	text-indent: -99999px;
+	}
+.lang-btn-es:hover {
+	background-position: 137px -30px;
 }
 
 .market-list {
 	max-height: 355px;
 	overflow: auto;
 	border: 2px solid #e3e3e3;
-
 }
 
 .gray-box {
@@ -177,7 +202,7 @@ h6 {
 }
 
 body{
-    padding-top: 100px;
+    padding-top: 120px;
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'Roboto Condensed', sans-serif;
