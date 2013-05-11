@@ -143,11 +143,14 @@ h6 {
 	top:2px;
 }
 
+.language{
+	float: right;
+}
 .lang-container {
 	background-color: #cc600a;
 	height: 30px;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -156,7 +159,7 @@ h6 {
 
 .lang-btn-en {
 	display: inline-block;
-	width: 137px;
+	width: 100px;
 	height: 30px;
 	background: image-url("language.png");
 	background-position: 0 -30px;
@@ -167,15 +170,16 @@ h6 {
 }
 .lang-btn-es {
 	display: inline-block;
-	width: 137px;
+	width: 100px;
 	height: 30px;
 	background: image-url("language.png");
-	background-position: 137px 0px;
+	background-position: 100px 0px;
 	text-indent: -99999px;
 	}
 .lang-btn-es:hover {
-	background-position: 137px -30px;
+	background-position: 100px -30px;
 }
+
 
 .market-list {
 	max-height: 355px;
