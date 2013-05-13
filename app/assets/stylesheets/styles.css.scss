@@ -164,6 +164,7 @@ h6 {
 	background: image-url("language.png");
 	background-position: 0 -30px;
 	text-indent: -99999px;
+	cursor: pointer;
 	}
 .lang-btn-en:hover {
 	background-position: 0 0;
@@ -175,8 +176,12 @@ h6 {
 	background: image-url("language.png");
 	background-position: 100px 0px;
 	text-indent: -99999px;
+	cursor: pointer;
 	}
 .lang-btn-es:hover {
+	background-position: 100px -30px;
+}
+.lang-btn-es a.active {
 	background-position: 100px -30px;
 }
 

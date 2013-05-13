@@ -4,19 +4,17 @@
   .row
     .span9
       %h2.visible-phone
-        %center The best way to support your family in the Dominican Republic.
+        %center= " #{t :best}" 
       %br.visible-phone
       %br.visible-phone
       %h4.visible-phone
-        %center What would you like to do for them today?
+        %center= " #{t :what}" 
       %br.visible-phone
       %br.visible-phone
       .car-cont.hidden-phone
         .car-cont-img
           .car-type
-            SEND YOUR FAMILY FRESH DELIVERED GROCERIES OR 
-            %br
-            PAY THEIR UTILITY BILLS RIGHT HERE!
+            = " #{t :slider}" 
         .guaranteed
         
     .span3 
@@ -24,16 +22,16 @@
         %center
           %h2
             %font{:color => "#AA151B", :size => "12"}
-              I want to
-          = link_to 'send my family fresh groceries in the Dominican Republic ',  "supermarket" , class: "btn-main"
-          = link_to 'pay my familys utility bills in the Dominican Republic' ,  "utilities" , class: "btn-main"
+              = t :buttontitle
+          = link_to " #{t :buttonfood}",  "supermarket" , class: "btn-main"
+          = link_to " #{t :buttonbills}",  "utilities" , class: "btn-main"
       .well.visible-phone
         %center
           %h2
             %font{:color => "#AA151B", :size => "12"}
-              I want to
-            = link_to 'send my family fresh groceries in the Dominican Republic ',  "supermarket" , class: "btn-main"
-            = link_to 'pay my familys utility bills in the Dominican Republic' ,  "utilities" , class: "btn-main"
+              = t :buttontitle
+            = link_to " #{t :buttonfood}",  "supermarket" , class: "btn-main"
+            = link_to " #{t :buttonbills}",  "utilities" , class: "btn-main"
   
   .row
     .span12

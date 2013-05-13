@@ -1,7 +1,6 @@
 Regalii::Application.routes.draw do
   devise_for :users
-
-  root :to => 'pages#home'
+  
   get 'about' => 'pages#about'
   get 'refunds' => 'pages#refunds'
   get 'terms' => 'pages#terms'
@@ -66,4 +65,10 @@ Regalii::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+  
+  scope '(:locale)', :locale => /en|es/ do
+    match '/' => 'pages#home'
+  end
+
+  root :to => 'pages#home'
 end
