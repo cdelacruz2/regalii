@@ -2,7 +2,7 @@
   %h1 You're logged in!
 - else
   .row
-    .span9
+    .span12
       %h2.visible-phone
         %center= " #{t :best}"
       %br.visible-phone
@@ -19,16 +19,16 @@
             %br
               = " #{t :or}"
             = " #{t :bills}"
-        .guaranteed
-        
-    .span3 
-      .hidden-phone     
-        %center
-          %h2
-            %font{:color => "#AA151B", :size => "12"}
-              = t :buttontitle
-          = link_to " #{t :buttonfood}",  "supermarket" , class: "btn-main"
-          = link_to " #{t :buttonbills}",  "utilities" , class: "btn-main"
+          .guaranteed
+          .iwanttobox.span3
+            %center
+              %h2
+              %font{:color => "#AA151B", :size => "12"}
+                = t :buttontitle
+            %br
+            = link_to " #{t :buttonfood}",  "supermarket" , class: "btn-main"
+            = link_to " #{t :buttonbills}",  "utilities" , class: "btn-main"
+
       .well.visible-phone
         %center
           %h2

@@ -14,7 +14,7 @@ $btnPrimaryBackgroundHighlight: #ED1C24;
 @import 'bootstrap';
 
 .navbar-inner{
-    @include box-shadow(none !important);
+    /*@include box-shadow(none !important);*/
     border: 0;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px; 
@@ -110,6 +110,7 @@ h6 {
 	font-size: 20px;
 	letter-spacing: 1px;
 	line-height: 26px;
+	
 
 }.btn-main:hover {
 	background-color:#ED1C24;
@@ -211,23 +212,23 @@ h6 {
 }
 
 body{
-    padding-top: 120px;
+    padding-top: 130px;
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'Roboto Condensed', sans-serif;
 		color: #ffffff;
 }
 
-.food {
-	-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-     -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-
 .car-cont {
-	height: 400px;
+	height: 395px;
 	z-index: 0;
 	position: relative;
+	border: 1px;
+	border-color: #CCCCCC;
+	border-style: solid;
+		-webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
 }
 .car-cont-img {
 	background-image: image-url("DR1.jpg");
@@ -235,6 +236,7 @@ body{
 	width: 100%;
 	overflow: hidden;
 	z-index: 0;
+	background-size: cover;
 }
 .car-type {
 	background: #076AB2;
@@ -259,6 +261,21 @@ body{
 	position: absolute;
 	left: 20px;
 	bottom: 20px;
+}
+
+.iwanttobox {
+	background: #ffffff;
+	opacity: 0.9;
+	padding-top: 50px;
+	border-left: 15px;
+	border-left-color: #AA151B;
+	border-left-style: solid;
+	height: 345px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
 }
 
 .featurette-divider {
