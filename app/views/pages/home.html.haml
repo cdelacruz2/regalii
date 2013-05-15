@@ -32,25 +32,30 @@
               = t :buttontitle
             = link_to " #{t :buttonfood}",  "supermarket" , class: "btn-main"
             = link_to " #{t :buttonbills}",  "utilities" , class: "btn-main"
+  %br/
+  %br/
+  .row
+    .span6
+      %h2.featurette-heading
+        Send fresh groceries to your family.
+        %br
+        %span.muted Next day delivery!
+      %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+    .span6
+      = image_tag 'supermarket.png' , class: "pull-right"
   
   .row
+    %hr.featurette-divider
+    .span6
+      = image_tag 'utilities.png' , class: "pull-left"
+    .span6
+      %h2.featurette-heading
+        Pay your bills for anyone of these companies.
+        %br
+        %span.muted Light. Water. Phone. Cable.
+      %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+
+%hr.featurette-divider 
+  .row
     .span12
-      .gray-box.hidden-phone
-        %center
-          = image_tag 'featured-in.png' 
-  .row.hidden-phone
-    .span8
-      .black-box
-        %h2
-          %font{:color => "#ffffff", :size => "4"}
-            NEWS IN THE D.R. THAT YOU SHOULD KNOW ABOUT 
-      %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
-      %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
-      %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
-    .span4
-      .black-box
-        %h2
-          %font{:color => "#ffffff", :size => "4"} BE PROUD TO PROVIDE FOR YOUR FAMILY
-      %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
-      %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
-      %ul Lorem ipsum dolor sit amet, varius et in mauris, sed risus tortor consectetuer.
+      = image_tag 'featured-in.jpg' 
