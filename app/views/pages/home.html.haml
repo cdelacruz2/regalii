@@ -4,17 +4,21 @@
   .row
     .span9
       %h2.visible-phone
-        %center= " #{t :best}" 
+        %center= " #{t :best}"
       %br.visible-phone
       %br.visible-phone
       %h4.visible-phone
         %center= " #{t :what}" 
       %br.visible-phone
       %br.visible-phone
+
       .car-cont.hidden-phone
         .car-cont-img
           .car-type
-            = " #{t :slider}" 
+            = " #{t :groceries}"
+            %br
+              = " #{t :or}"
+            = " #{t :bills}"
         .guaranteed
         
     .span3 
@@ -37,9 +41,9 @@
   .row
     .span6
       %h2.featurette-heading
-        Send fresh groceries to your family.
+        = t :featurette1a
         %br
-        %span.muted Next day delivery!
+        %span.muted= t :featurette1b
       %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
     .span6
       = image_tag 'supermarket.png' , class: "pull-right"
@@ -50,9 +54,9 @@
       = image_tag 'utilities.png' , class: "pull-left"
     .span6
       %h2.featurette-heading
-        Pay your bills for anyone of these companies.
+        = t :featurette2a
         %br
-        %span.muted Light. Water. Phone. Cable.
+        %span.muted= t :featurette2b
       %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
 
 %hr.featurette-divider 

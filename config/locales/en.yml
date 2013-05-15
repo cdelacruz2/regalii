@@ -2,9 +2,15 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  slider: "SEND YOUR FAMILY FRESH DELIVERED GROCERIES OR PAY THEIR UTILITY BILLS RIGHT HERE!"
+  groceries: "SEND YOUR FAMILY FRESH DELIVERED GROCERIES"
+  or: "OR" 
+  bills: "PAY THEIR UTILITY BILLS RIGHT HERE!"
   buttontitle: "I want to"
   buttonfood: "send my family fresh groceries in the Dominican Republic"
   buttonbills: "pay my familys utility bills in the Dominican Republic"
   best: "The best way to support your family in the Dominican Republic."
   what: "What would you like to do for them today?"
+  featurette1a: "Send fresh groceries to your family."
+  featurette1b: "Next day delivery!"
+  featurette2a: "Pay your bills for anyone of these companies."
+  featurette2b: "Light. Water. Phone. Cable."

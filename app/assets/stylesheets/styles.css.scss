@@ -239,11 +239,10 @@ body{
 .car-type {
 	background: #076AB2;
 	display: inline;
-	padding: 3px;
-	font-size: 25px;
-	line-height: 45px;
+	font-size: 32px;
+	line-height: 50px;
 	color: #F4EEAB;
-	font-weight: 400;
+	font-weight: 300;
 	z-index: 2;
 	position: relative;
 	overflow: auto;
@@ -288,7 +287,6 @@ body{
   line-height: 1;
   letter-spacing: -1px;
 }
-
 
 @import 'bootstrap-responsive';
 

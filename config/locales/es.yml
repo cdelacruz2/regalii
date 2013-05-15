@@ -1,9 +1,15 @@
 # Spanish localization file
 
 es:
-  slider: "PAGA LA COMIDA Y TODAS LAS CUENTAS DE TU FAMILIA EN R.D"
+  groceries: "ENVIA COMIDA FRESCA PARA TU FAMILIA EN R.D" 
+  or: "O" 
+  bills: "PAGA LAS CUENTAS AQUI!"
   buttontitle: "Yo quiero"
   buttonfood: "enviar comida fresca para mi familia en R.D"
   buttonbills: "pagar la luz, agua, telefono, o cable en R.D"
   best: "La mejor manera de apoyar a tu familia en la Republica Dominicana"
   what: "Que le gustaria hacer por ellos hoy?"
+  featurette1a: "Envia comida fresca a tu familia."
+  featurette1b: "Directo a la casa!"
+  featurette2a: "Paga las cuentas por cualquiera de estas compañias."
+  featurette2b: "Luz. Agua. Telefono. Cable."
