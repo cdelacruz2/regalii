@@ -1,6 +1,32 @@
-%script{:charset => "utf-8", :src => "carousel_edgePreload.js", :type => "text/javascript"}
-:css
-  .edgeLoad-photo-gallery-1 { visibility:hidden; }
-      / Adobe Edge Runtime End
-%body{:style => "margin:0;padding:0;"}
-  #Stage.photo-gallery-1
+:javascript
+  $(function(){
+    $('#myCarousel').carousel({
+    	interval: 2500
+    });
+  });
+
+
+#myCarousel.carousel.slide.hidden-phone
+  .carousel-inner
+    .item.active
+      = image_tag 'DR1.jpg'
+    .item
+      = image_tag 'DR2.jpg'
+    .item
+      = image_tag 'DR3.jpg'
+  .car-type
+    = " #{t :groceries}"
+    %br
+    = " #{t :or}"
+    = " #{t :bills}"
+  .guaranteed
+  .iwanttobox.span3
+    %center
+      %h2
+      %font{:color => "#AA151B", :size => "12"}
+        = t :buttontitle
+        %br
+        = link_to " #{t :buttonfood}",  "supermarket" , class: "btn-main"
+        = link_to " #{t :buttonbills}",  "utilities" , class: "btn-main"
+
+

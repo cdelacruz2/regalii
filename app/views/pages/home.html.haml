@@ -12,22 +12,7 @@
       %br.visible-phone
       %br.visible-phone
 
-      .car-cont.hidden-phone
-        .car-cont-img
-          .car-type
-            = " #{t :groceries}"
-            %br
-              = " #{t :or}"
-            = " #{t :bills}"
-          .guaranteed
-          .iwanttobox.span3
-            %center
-              %h2
-              %font{:color => "#AA151B", :size => "12"}
-                = t :buttontitle
-            %br
-            = link_to " #{t :buttonfood}",  "supermarket" , class: "btn-main"
-            = link_to " #{t :buttonbills}",  "utilities" , class: "btn-main"
+      = render 'layouts/carousel'
 
       .well.visible-phone
         %center

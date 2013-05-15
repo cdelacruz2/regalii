@@ -220,35 +220,16 @@ body{
 		color: #ffffff;
 }
 
-.car-cont {
-	height: 395px;
-	z-index: 0;
-	position: relative;
-	border: 1px;
-	border-color: #CCCCCC;
-	border-style: solid;
-		-webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
-     -moz-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
-}
-.car-cont-img {
-	background-image: image-url("DR1.jpg");
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	z-index: 0;
-	background-size: cover;
-}
 .car-type {
 	background: #E96D0A;
+	opacity: 0.9;
 	display: inline;
 	font-size: 32px;
 	line-height: 50px;
 	color: #ffffff;
 	font-weight: 300;
 	z-index: 2;
-	position: relative;
-	overflow: auto;
+	position: absolute;
 	left: 20px;
 	top: 20px;
 		-webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
@@ -274,7 +255,7 @@ body{
 	border-left: 15px;
 	border-left-color: #AA151B;
 	border-left-style: solid;
-	height: 345px;
+	height: 400px;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
@@ -308,6 +289,33 @@ body{
   line-height: 1;
   letter-spacing: -1px;
 }
+
+/* Carousel base class */
+    .carousel {
+      margin-bottom: 0;
+      height: 450px;
+      z-index: 0;
+      position: relative;
+      border: 1px;
+      border-color: #CCCCCC;
+      border-style: solid;
+        -webkit-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+         -moz-box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+              box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel .item {
+      height: 450px;
+    }
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      overflow: hidden;
+      height: 450px;
+      z-index: 0
+    }
 
 @import 'bootstrap-responsive';
 
