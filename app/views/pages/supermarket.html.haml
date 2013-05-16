@@ -1,14 +1,14 @@
 .row-fluid
 	.span5
 		%h2.featurette-heading 
-			Welcome to our online Supermarket! 
-			%h5 Deliveries anywhere to Santo Domingo and Santiago.
+			= t :welcomesupermarket 
+			%h5= t :superdeliveries 
 	.span7
 		
 %br/
 %br/
 .row
-	%h4.span5.span.muted What food package would you like to send?
+	%h4.span5.span.muted= t :foodpackage
 	%ul.span7
 		%li.span2
 			= link_to "$100",  "#100" , class: "btn-main-gray"
