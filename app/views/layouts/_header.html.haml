@@ -16,8 +16,8 @@
   .lang-container
     .container
       .language
-        = link_to 'english',  url_for(:locale => 'en') , class: "lang-btn-en"
-        = link_to 'español', url_for(:locale => 'es') , class: "lang-btn-es"
+        = active_link_to 'english', url_for(:locale => 'en') , :class_active => 'lang-btn-en-active',:class_inactive => 'lang-btn-en'
+        = active_link_to 'español', url_for(:locale => 'es') , :class_active => 'lang-btn-es-active',:class_inactive => 'lang-btn-es'
   .navbar.navbar-fixed-top
     .navbar-inner
       .container

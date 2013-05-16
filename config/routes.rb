@@ -1,13 +1,5 @@
 Regalii::Application.routes.draw do
   devise_for :users
-  
-  get 'about' => 'pages#about'
-  get 'refunds' => 'pages#refunds'
-  get 'terms' => 'pages#terms'
-  get 'privacy' => 'pages#privacy'
-  get 'contact' => 'pages#contact'
-  get 'supermarket' => 'pages#supermarket'
-  get 'utilities' => 'pages#utilities'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -65,9 +57,23 @@ Regalii::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+  scope '(:locale)', :locale => /en|es/ do
+    resources :pages
+  end
+
+  scope '(:locale)', :locale => /en|es/ do
+    match '/about' => 'pages#about'
+    match '/terms' => 'pages#terms'
+    match '/privacy' => 'pages#privacy'
+    match '/refunds' => 'pages#refunds'
+    match '/supermarket' => 'pages#supermarket'
+    match '/utilities' => 'pages#utilities'
+    match '/contact' => 'pages#contact'
+  end
   
   scope '(:locale)', :locale => /en|es/ do
-    match '/' => 'pages#home'
+    match '/:locale' => 'pages#home'
   end
 
   root :to => 'pages#home'

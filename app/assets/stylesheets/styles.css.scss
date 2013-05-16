@@ -164,13 +164,23 @@ h6 {
 	width: 100px;
 	height: 30px;
 	background: image-url("language.png");
-	background-position: 0 -30px;
+	background-position: 0 0;
 	text-indent: -99999px;
 	cursor: pointer;
 	}
 .lang-btn-en:hover {
-	background-position: 0 0;
+	background-position: 0 -30px;
 }
+.lang-btn-en-active {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	background: image-url("language.png");
+	background-position: 0 -30px;
+	text-indent: -99999px;
+	cursor: pointer;
+	}
+	
 .lang-btn-es {
 	display: inline-block;
 	width: 100px;
@@ -183,8 +193,14 @@ h6 {
 .lang-btn-es:hover {
 	background-position: 100px -30px;
 }
-.lang-btn-es a.active {
+.lang-btn-es-active {
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	background: image-url("language.png");
 	background-position: 100px -30px;
+	text-indent: -99999px;
+	cursor: pointer;
 }
 
 
@@ -255,7 +271,7 @@ body{
 	border-left: 15px;
 	border-left-color: #AA151B;
 	border-left-style: solid;
-	height: 400px;
+	height: 370px;
 	overflow: hidden;
 	position: absolute;
 	top: 0;
@@ -293,7 +309,7 @@ body{
 /* Carousel base class */
     .carousel {
       margin-bottom: 0;
-      height: 450px;
+      height: 420px;
       z-index: 0;
       position: relative;
       border: 1px;
@@ -305,7 +321,7 @@ body{
     }
 
     .carousel .item {
-      height: 450px;
+      height: 420px;
     }
     .carousel img {
       position: absolute;
@@ -313,7 +329,7 @@ body{
       left: 0;
       min-width: 100%;
       overflow: hidden;
-      height: 450px;
+      height: 420px;
       z-index: 0
     }
 

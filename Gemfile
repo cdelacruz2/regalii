@@ -6,6 +6,7 @@ gem 'devise'
 gem 'simple_form'
 gem "haml", "~> 4.0.2"
 gem "haml-rails"
+gem "active_link_to"
 
 
 group :production do
