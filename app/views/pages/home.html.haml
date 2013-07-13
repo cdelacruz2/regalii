@@ -1,3 +1,15 @@
+- content_for :javascript do
+  = javascript_include_tag "home.js"
+-# Javascript to make the FB like box work
+:javascript 
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = '//connect.facebook.net/en_US/all.jsi#xfbml=1&appId=260745917297387';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  
 - if user_signed_in?
   %h1 You're logged in!
 - else
@@ -28,26 +40,61 @@
       = image_tag 'featured-in.jpg' 
   %br/
   %br/
-  .row
+  .row.hidden-phone
     .span6
       %h2.featurette-heading
         = t :featurette1a
         %br
         %span.muted= t :featurette1b
-      %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+      %p.lead 
+        = " #{t :send_food_details}"
     .span6
-      = image_tag 'supermarket.png' , class: "pull-right"
+      = image_tag 'groceriado.jpg' , class: "pull-right"
   
-  .row
-    %hr.featurette-divider
+.row.hidden-phone
+  %hr.featurette-divider
     .span6
-      = image_tag 'utilities.png' , class: "pull-left"
+      = image_tag 'utility-logos-square.png' , class: "pull-left", :style => "width:80%;"
     .span6
       %h2.featurette-heading
         = t :featurette2a
         %br
         %span.muted= t :featurette2b
-      %p.lead Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
+      %p.lead 
+        = " #{t :pay_utilities_details}"
 
-%hr.featurette-divider 
-  
+%hr.featurette-divider.hidden-phone
+
+.row.hidden-phone
+  %h2.feedback.featurette-heading
+    %center= t :feedback_title 
+  .span7
+    .feedback
+      .feedback-box
+        .feedback-bubble
+          %p "Es super facil, pude pagar mis compras solo mostrando el SMS en mi telefono"
+        = image_tag('avatar1b.jpg')
+        %p Whitney Rodriguez - Santo Domingo, D.R.
+      .feedback-box
+        .feedback-bubble
+          %p "I love the fact that my mother got a text message. That was really good to know."
+        = image_tag('avatar3b.jpg')
+        %p Jose De La Rosa - New York, NY
+  .span5
+    .feedback-box
+      .fb-like-box{:data => {:href => "https://www.facebook.com/Regalii", :width => "410", :height => "270", "show-faces" => "true", :stream => "false", :header => "false"}}
+
+
+:javascript
+  (function() {
+    var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+    se.src = '//commondatastorage.googleapis.com/code.snapengage.com/js/78351fba-1553-42d8-bb72-74fbc798c55f.js';
+    var done = false;
+    se.onload = se.onreadystatechange = function() {
+      if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')) {
+        done = true;
+        //SnapEngage.openProactiveChat(true, true); 
+      }
+    };
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+  })();
