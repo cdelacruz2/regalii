@@ -36,6 +36,7 @@ ul.nav.pull-right {
 .navbar {
   overflow: visible;
   margin-top: 30px;
+  opacity: .9;
   }
 
 

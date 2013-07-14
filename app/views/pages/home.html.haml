@@ -1,3 +1,102 @@
+:css
+  .bullet{
+  background-color: #0071bc;
+  height: 27px;
+  width: 27px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 30px;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: normal;
+  text-align: center;
+  }
+
+
+
+
+.row-fluid
+  .span7
+    = image_tag 'regala-luz.png', :style=> "width:100%; margin-left:-20px;"
+  .span5
+    %h1.featurette-heading{:style=> "font-size:32px;"} Regalii paga hasta RD $600 de:
+    %hr.featurette-divider{:style=> "margin-top:10px; margin-bottom:10px;"}
+      = image_tag "luz-icons.png"
+
+    %hr.featurette-divider{:style=> "margin-top:10px; margin-bottom:10px;"}
+    %h2{:style=> "font-size:22px;"} Para tu familia en la Republica Dominicana.
+    %hr.featurette-divider{:style=> "margin-top:10px; margin-bottom:10px;"}
+    %h2{:style=> "font-size:22px;"} Tarjeta de credito no es necesario.
+    = link_to " #{t :buttonbills}",  "utilities" , class: "btn-main", :style => "width:380px"
+
+%hr.featurette-divider{:style=> "margin-top:20px; margin-bottom:30px;"}
+
+.row-fluid
+  .span7{:style=> "border-right:1px #ccc solid;padding-right:20px;"}
+    .row-fluid
+      .span1
+        .bullet 1
+      .span11
+        %h2{:style=>"margin-top:-1px;font-size:22px;"} Consigue el # de cuenta (NIC) o el # de telefono de casa.
+    %hr.featurette-divider{:style=> "margin-top:10px; margin-bottom:20px;"}
+    .row-fluid
+      .span1
+        .bullet 2
+      .span11
+        %h2{:style=>"margin-top:-1px;font-size:22px;"} Usa nuestro sistema para pagar la cuenta.
+    %hr.featurette-divider{:style=> "margin-top:10px; margin-bottom:20px;"}
+    .row-fluid
+      .span1
+        .bullet 3
+      .span11
+        %h2{:style=>"margin-top:-1px;font-size:22px;"} Coloque el promo code "regalaluz600" en la pagina de pago.
+    %hr.featurette-divider{:style=> "margin-top:10px; margin-bottom:10px;"}
+  .span5
+    .feedback-box.hidden-phone
+      .fb-like-box{:data => {:href => "https://www.facebook.com/Regalii", :width => "400", :height => "100%", "show-faces" => "true", :stream => "false", :header => "false"}}
+
+%hr.featurette-divider{:style=> "margin-top:30px"}
+.row.hidden-phone
+  .span12
+    = image_tag 'main2.jpg', :style=>"width:100%;"
+%hr.featurette-divider.hidden-phone
+
+
+.row-fluid
+  .span12
+    %center
+      %h2.feedback.featurette-heading
+        Nuestros servicios
+      = image_tag "all-icons.png"
+
+%hr.featurette-divider.hidden-phone
+
+.row-fluid
+  .span6
+    %h2.feedback.featurette-heading
+      Que es regalii?
+    .row.span8
+      %h3{:style=>"margin-left:-10px;"}
+        Es la mejor manera de ayudar a tu familia en la Republica Dominicana. Con nuestro sistema, puedes pagar la comida, luz, cable y telefono. Solo USD$3 por cada transaccion.
+  .span5
+    .pull-right
+      .well
+        %center
+          %h2
+            %font{:color => "#AA151B", :size => "12"}
+              = t :buttontitle
+            = link_to " #{t :buttonfood}",  "supermarket", class: "btn-main"
+            = link_to " #{t :buttonbills}",  "utilities" , class: "btn-main"
+
+
+%hr.featurette-divider{:style=> "margin-top:30px"}
+.row.hidden-phone
+  .span12
+    = image_tag 'main1.jpg', :style=>"width:100%;"
+%hr.featurette-divider.hidden-phone
+
+
 - content_for :javascript do
   = javascript_include_tag "home.js"
 -# Javascript to make the FB like box work
@@ -9,81 +108,6 @@
     js.src = '//connect.facebook.net/en_US/all.jsi#xfbml=1&appId=260745917297387';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-  
-- if user_signed_in?
-  %h1 You're logged in!
-- else
-  .row
-    .span12
-      %h2.visible-phone
-        %center= " #{t :best}"
-      %br.visible-phone
-      %br.visible-phone
-      %h4.visible-phone
-        %center= " #{t :what}" 
-      %br.visible-phone
-      %br.visible-phone
-
-      = render 'layouts/carousel'
-
-      .well.visible-phone
-        %center
-          %h2
-            %font{:color => "#AA151B", :size => "12"}
-              = t :buttontitle
-            = link_to " #{t :buttonfood}",  "supermarket", class: "btn-main"
-            = link_to " #{t :buttonbills}",  "utilities" , class: "btn-main"
-  %br/
-  %br/
-  .row.hidden-phone
-    .span12
-      = image_tag 'featured-in.jpg' 
-  %br/
-  %br/
-  .row.hidden-phone
-    .span6
-      %h2.featurette-heading
-        = t :featurette1a
-        %br
-        %span.muted= t :featurette1b
-      %p.lead 
-        = " #{t :send_food_details}"
-    .span6
-      = image_tag 'groceriado.jpg' , class: "pull-right"
-  
-.row.hidden-phone
-  %hr.featurette-divider
-    .span6
-      = image_tag 'utility-logos-square.png' , class: "pull-left", :style => "width:80%;"
-    .span6
-      %h2.featurette-heading
-        = t :featurette2a
-        %br
-        %span.muted= t :featurette2b
-      %p.lead 
-        = " #{t :pay_utilities_details}"
-
-%hr.featurette-divider.hidden-phone
-
-.row.hidden-phone
-  %h2.feedback.featurette-heading
-    %center= t :feedback_title 
-  .span7
-    .feedback
-      .feedback-box
-        .feedback-bubble
-          %p "Es super facil, pude pagar mis compras solo mostrando el SMS en mi telefono"
-        = image_tag('avatar1b.jpg')
-        %p Whitney Rodriguez - Santo Domingo, D.R.
-      .feedback-box
-        .feedback-bubble
-          %p "I love the fact that my mother got a text message. That was really good to know."
-        = image_tag('avatar3b.jpg')
-        %p Jose De La Rosa - New York, NY
-  .span5
-    .feedback-box
-      .fb-like-box{:data => {:href => "https://www.facebook.com/Regalii", :width => "410", :height => "270", "show-faces" => "true", :stream => "false", :header => "false"}}
-
 
 :javascript
   (function() {
